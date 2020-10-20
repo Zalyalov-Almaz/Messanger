@@ -29,6 +29,8 @@ public class MessageManager {
         }
     }
     public void update(long id) {
+       messages.get(messages.indexOf(id)).setContent("Content updated");
+       messages.get(messages.indexOf(id)).setId(id + 1L);
         //написать дома
     }
     public ArrayList<Message> getMessages(long fromID, int count) {
